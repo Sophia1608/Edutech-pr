@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+                var idades = new Array();                 
+                var maior = 0;
+                var menor = 0;
+                var quantidade = parseInt(prompt("Digite a quantidade de idade:"));
+                for(i=0;i<quantidade;i++){
+                    idades = parseInt(prompt("Digite a sua idade:"));
+                
+                    if (idades >= 18){
+                        maior++;
+
+                    }else{
+                        menor++;
+                    }
+                
+                }
+
+            document.write("Maiores: "+maior+" - Menores: "+menor);
+        </script>
+    </head>
+    <body>
+
+        
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<head>
+	<script>
+	
+		function mostraResultado(valor,operacao){
+			document.write(operacao + " = " + valor);
+		}
+		
+		function calculadora(){
+			var menu = prompt("1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão \nEscolha uma opção");
+			var n1, n2;
+			
+			if(menu >= 1 && menu <= 4){
+				n1 = parseFloat(prompt("Digite o primeiro número:"));
+				n2 = parseFloat(prompt("Digite o segundo número:"));
+			}
+
+			if(menu == 1){
+				mostraResultado(n1+n2,"Soma");
+			}else if(menu == 2){
+				mostraResultado(n1-n2,"Subtração");
+			}else if(menu == 3){
+				mostraResultado(n1*n2,"Multiplicação");
+			}else if(menu == 4){
+				mostraResultado(n1/n2,"Divisão");
+			}else{
+				alert("Deu ruim!");
+			}
+		}
+		
+		calculadora();
+	</script>
+</head>
